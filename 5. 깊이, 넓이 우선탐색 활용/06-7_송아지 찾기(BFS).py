@@ -15,7 +15,7 @@ while dQ: # 데크가 비어있으면 멈춤
     if now == m: # 현재위치가 도착지이면
         break
     for next in(now-1, now+1, now+5): # 내가 갈 수 있는 3가지 위치로 한번씩 이동 가능
-        if 0<next<=MAX: #다음위치의 범위지정 음수x, 최대값 넘어갈 수 없음
+        if 0<next<=MAX: # 다음위치의 범위지정 음수x, 최대값 넘어갈 수 없음
             if ch[next] == 0: # 체크리스트에서 0인것만
                 dQ.append(next) # 데크에 추가
                 ch[next]=1 # 추가했으니 체크리스트 1로 체크
